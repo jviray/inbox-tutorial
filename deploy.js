@@ -16,7 +16,7 @@ const deploy = async () => {
 
   // Returns an instance of the contract we deployed
   const result = await new web3.eth.Contract(JSON.parse(interface))
-    .deploy({ data: bytecode, arguments: ['Hi there!'] })
+    .deploy({ data: bytecode })
     // Important to set gasLimit (21000 is generally the minimum);
     // was not mentioned in Grider's tutorial
     .send({ from: accounts[0], gas: '1000000', gasLimit: '21000' });
