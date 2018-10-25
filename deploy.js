@@ -21,9 +21,11 @@ const deploy = async () => {
     // was not mentioned in Grider's tutorial
     .send({ from: accounts[0], gas: '1000000', gasLimit: '21000' });
 
+  console.log(interface);
   console.log('Contract deployed to', result.options.address);
 };
 
 deploy();
 
-// 0x5340c4Dd423687008ba0F1fF57731337eeaaa25E
+// 0xF530a7fD556e0Ee62d6d2807fBa9f5F74676eBF4
+// 0x44163a637DF538D94a60C039E2926f4443F0A023
